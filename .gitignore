@@ -1,0 +1,6 @@
+data/
+*.npz
+*.zip
+*.npy
+*.pt
+*.pth
