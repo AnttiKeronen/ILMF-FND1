@@ -1,6 +1,10 @@
-data/
-*.npz
-*.zip
-*.npy
+# Ignore everything inside data/
+data/*
+
+# But allow dataset files (tracked by LFS)
+!data/**/*.npz
+!data/**/*.zip
+
+# Ignore model weights unless tracked by LFS
 *.pt
 *.pth
