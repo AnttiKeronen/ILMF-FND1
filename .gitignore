@@ -1,10 +1,12 @@
-# Ignore everything inside data/
-data/*
+# Ignore model weights
+*.pt
+*.pth
 
-# But allow dataset files (tracked by LFS)
+# Ignore numpy arrays (optional)
+*.npy
+
+# Allow data folder but use LFS
+!data/
 !data/**/*.npz
 !data/**/*.zip
 
-# Ignore model weights unless tracked by LFS
-*.pt
-*.pth
